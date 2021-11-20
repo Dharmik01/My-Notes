@@ -1,0 +1,36 @@
+=> General :-
+	git --version -> to see version
+	git status -> to view status
+	git init -> to init repo as git-repo
+	git log -> view log
+	git commit [-m] -> commits repo
+		-m -> for messege
+	git config [--global] (user.name | user.email) [name | email] -> configure or display user name or email
+		--global -> use provided credentials globally for system
+	git diff [--staged] file_name -> diffrentiate between file
+		--staged -> diffrentiate between staged file
+	git clone SSH_Link [.] -> clone repo from github
+		.(dot) -> clone to current folder
+	git rm --cached filename -> remove history of a file
+
+=> Stage/Un-Stage :-
+	git add [_] -> stage a file
+		file_name
+		. (dot) -> stage new and modified files (without deleted)
+		-u -> stage modified and deleted files (without new)
+		-a -> stage all
+	git reset file_name -> un-stage a file
+
+=> Remote connection :-
+	git remote add origin [link] -> adds origin(connects to github)
+	git push -u origin master -> push to github
+	git pull origin master -> pull from github
+
+=> Branch :-
+	git push --set-upstream origin branch_name -> remote create branch
+	git checkout [file_name | branch_name] -> rollback commit or switch branch
+	git branch [-d] [branch_name] -> view or create branch
+		-d -> Delete branch localy
+		branch_name -> name of branch
+	git merge branch_name -> to merger branch
+	git push origin --delete branch_name -> delete remote branch
