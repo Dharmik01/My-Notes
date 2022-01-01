@@ -1,0 +1,2 @@
+Install venv-wrapper in python -> pip install virtualenvwrapper-win
+create Virtual env -> mkvirtualenv envName

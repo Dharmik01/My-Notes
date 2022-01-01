@@ -1,0 +1,3 @@
+Apply Migrations -> python manage.py migrate
+run server -> python manage.py runserver
+create or start ana app -> python manage.py startapp appname
