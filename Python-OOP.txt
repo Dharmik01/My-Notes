@@ -1,0 +1,31 @@
+-> 	class ClassName:  							#class
+	-> 	in class methods and cunstructors have a default argument "self" which points to instance of the object 		of the class
+	-> 	self.dataMember uses dataMember declared in method
+	-> 	className.dataMember uses dataMember declared in class
+
+-> 	__dict__ 										#to access all variable of instance
+
+-> 	def __init__(self, [args]): 					#cunstructor
+
+-> 	def functionName([args]): 					#function
+
+-> 	@classmethod
+	def methodName(cls, [args]):					#class method -> used to access class when instance is not usable
+	
+	ClassName.methodName()
+
+->	str.split(char)								#splits string on occurance of specified character and returns 														resultant strings
+->	constructor class method :-
+	@classmethod
+	def methodName(cls, [args]):
+		return cls(args)
+
+->	static methods :-								#methods which can run with or without creating objects
+	@staticmethod									
+	def methodName([args]):
+		#code
+
+->	dunder method :-								#operator overriding
+	def __add__(self, other):					#declaration
+	
+	self + other									#usage

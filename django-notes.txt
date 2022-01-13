@@ -1,3 +1,29 @@
 Apply Migrations -> python manage.py migrate
 run server -> python manage.py runserver
-create or start ana app -> python manage.py startapp appname
+create or start an app -> python manage.py startapp appname
+
+Mapping(navigation) of project is handeled in urls.py of main project folder.
+app level mapping is handeled in urls.py of app directory.
+functions are made in views.py
+
+path(url, triggering_function, name)
+include(url)
+
+respond using httpResponse()
+render(requestObject, 'file name for response')
+django.urls -> path, include
+
+Static files :-
+
+settings.py -> 
+	STATIC_URL = '/static/'
+	STATICFILES_DIRS = [
+		os.path.join(BASE_DIR, 'static')
+	]
+	STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+
+run -> py manage.py collectstatic
+
+to provide src/url in html -> 
+{% load static %}
+use this insted of url/src -> {% static 'url_to_static_files' %}
